@@ -1,18 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContributorComponent } from './contributor/contributor.component';
+import { ContributorCardComponent } from './components/contributor-card/contributor-card.component';
+import { ContributorListComponent } from './components/contributor-list/contributor-list.component';
 
 
 
 @NgModule({
   declarations: [
-    ContributorComponent
+    ContributorCardComponent,
+    ContributorListComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    ContributorComponent
+    ContributorListComponent
   ]
 })
 export class FeatureModule { }

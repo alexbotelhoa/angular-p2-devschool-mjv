@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-contributor',
-  templateUrl: './contributor.component.html',
-  styleUrls: ['./contributor.component.css'],
+  selector: 'app-contributor-list',
+  templateUrl: './contributor-list.component.html',
+  styleUrls: ['./contributor-list.component.css']
 })
-export class ContributorComponent implements OnInit {
-  
+export class ContributorListComponent implements OnInit {
+
   colaboradores = [
     { id: 1, nome: 'Nathan Carlos', salario: 7000, cargo: 'Dev Pl' },
     { id: 2, nome: 'David Carlos', salario: 3000, cargo: 'Dev Jr' },
@@ -17,7 +17,9 @@ export class ContributorComponent implements OnInit {
     { id: 6, nome: 'Alan Jhonnes', salario: 11000, cargo: 'Arquiteto' },
   ];
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
+
 }
